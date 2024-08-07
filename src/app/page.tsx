@@ -1,22 +1,15 @@
-import Logo from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import {
-  AlignRight,
-  ArrowDown,
-  ArrowRight,
-  Instagram,
-  MoveDown,
-  MoveDownLeft,
-  MoveDownRight,
-  MoveRight,
-} from "lucide-react";
+import { ArrowRight, Instagram, MoveDown } from "lucide-react";
 
 export default function Home() {
   return (
     <div>
-      <div className="relative bg-stone-100 w-full h-[600px] p-16 flex flex-col items-start justify-end">
-        <em className="absolute bottom-0 left-0 z-0 font-custom font-thin text-[450px] text-stone-200/30">
+      <div className="relative w-full h-screen p-16 flex flex-col items-start justify-center">
+        <em
+          id="dermatologista"
+          className="absolute top-[20%] left-0 z-0 font-custom font-thin text-[450px] text-stone-200/30 select-none"
+        >
           Dermatologista
         </em>
 
@@ -24,11 +17,11 @@ export default function Home() {
           <em className="text-6xl font-custom font-thin">
             Cuidando da sua pele, cuidando de você
           </em>
-          <p className="flex gap-2 mt-8">
-            Conheça os tratamentos <ArrowDown className="text-main/60" />
+          <p className="flex items-center gap-2 mt-8">
+            Conheça os tratamentos{" "}
           </p>
-          <Button className="gap-1 w-">
-            <AlignRight /> MENU
+          <Button className="gap-1">
+            TRATAMENTOS <ArrowRight size={16} />
           </Button>
         </span>
       </div>
@@ -40,7 +33,7 @@ export default function Home() {
         </p>
       </div>
 
-      <MoveDown className="w-full my-8 text-main/60" />
+      <MoveDown className="w-full my-8 text-main2/40" />
 
       <div className="grid grid-cols-2 p-16 gap-8">
         <Card className="flex justify-center items-center">
@@ -56,10 +49,13 @@ export default function Home() {
             dignissimos, necessitatibus perferendis delectus blanditiis nostrum
             veniam voluptatibus suscipit doloremque atque ipsum cumque!
           </p>
+          <Button variant={"outline"} className="gap-1">
+            INFORMAÇÃO <ArrowRight size={16} />
+          </Button>
         </div>
       </div>
 
-      <MoveDown className="w-full my-8 text-main/60" />
+      <MoveDown className="w-full my-8 text-main2/40" />
 
       <div className="grid grid-cols-2 p-16 gap-8">
         <Card className="flex justify-center items-center">
@@ -75,13 +71,33 @@ export default function Home() {
             dignissimos, necessitatibus perferendis delectus blanditiis nostrum
             veniam voluptatibus suscipit doloremque atque ipsum cumque!
           </p>
+          <Button variant={"outline"} className="gap-1">
+            INFORMAÇÃO <ArrowRight size={16} />
+          </Button>
         </div>
       </div>
 
-      <footer className="grid grid-cols-4 bg-yellow-950 text-background gap-8 p-16">
+      <div className="h-screen grid grid-cols-2 gap-8 items-center bg-main/95 p-16 text-stone-100">
+        <main className="space-y-8">
+          <p className="font-custom font-thin italic text-6xl w-[350px]">
+            Cuidando da sua pele, cuidando de você
+          </p>
+
+          <Button variant={"secondary"} className="gap-1">
+            AGENDAR UMA CONSULTA <ArrowRight size={16} />
+          </Button>
+        </main>
+        <div>
+          <Card className="bg-white w-96 h-96 flex justify-center items-center">
+            Imagem profissional
+          </Card>
+        </div>
+      </div>
+
+      <footer className="grid grid-cols-4 bg-main text-background gap-8 p-16">
         <div className="flex justify-center items-center">
           <em className="text-center font-custom tracking-widest">
-            <p className="text-sm text-yellow-600">Clínica</p>
+            <p className="text-sm text-main2">Clínica</p>
             <p className="text-lg leading-4">Dani Moraes</p>
           </em>
         </div>
@@ -97,7 +113,7 @@ export default function Home() {
           <p className="mb-4">Acompanhe</p>
           <Button
             variant={"ghost"}
-            className="rounded-full p-2 ml-2 text-yellow-600"
+            className="rounded-full p-2 ml-2 text-main2"
           >
             <Instagram />
           </Button>

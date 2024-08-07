@@ -1,6 +1,6 @@
 "use client";
 
-import { AlignRight, AppWindow, Instagram, Menu } from "lucide-react";
+import { AlignRight, ArrowRight, Ghost, Instagram } from "lucide-react";
 import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
@@ -33,16 +33,16 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 backdrop-blur-sm bg-background/80 flex justify-between items-center px-16 py-4 transition duration-500 shadow ${
+      className={`sticky top-0 z-50 backdrop-blur-sm bg-background/80 flex justify-between items-center px-16 py-4 transition duration-500 shadow-sm ${
         show ? "transform translate-y-0" : "transform -translate-y-full"
       }`}
     >
-      <nav className="flex items-center">
+      {/* <nav className="flex items-center">
         <Button
           variant={"secondary"}
           className="flex items-center gap-1 text-xs"
         >
-          <AlignRight className="text-main/60" /> MENU
+          <AlignRight size={20} className="text-main/60" /> MENU
         </Button>
         <Separator orientation="vertical" className="h-8 mx-8 bg-stone-300" />
         <Logo />
@@ -53,6 +53,20 @@ export default function Header() {
           <Instagram className="text-main/60" />
         </Button>
         <Button>AGENDAR UMA CONSULTA</Button>
+      </nav> */}
+
+      <nav className="w-full flex items-center justify-between">
+        <Button variant={"ghost"} className="flex items-center gap-1 text-xs">
+          <AlignRight size={20} /> MENU
+        </Button>
+
+        <Logo />
+
+        <span className="flex items-center gap-4">
+          <Button variant={"outline"} className="gap-1">
+            AGENDAR UMA CONSULTA <ArrowRight size={16} />
+          </Button>
+        </span>
       </nav>
     </header>
   );
