@@ -5,8 +5,9 @@ import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
 import Menu from "./Menu";
 import { Drawer, DrawerTrigger } from "./ui/drawer";
+import Container from "./Container";
 
-export default function Header() {
+export default function LayoutNav() {
   const [show, setShow] = useState(true);
   let lastScrollY = 0;
 
@@ -32,27 +33,23 @@ export default function Header() {
   }, []);
 
   return (
-    <header
-      className={`sticky top-0 z-50 backdrop-blur-sm bg-background/80 flex justify-between items-center px-16 py-4 transition duration-500 shadow-sm ${
+    <nav
+      className={`sticky top-0 z-50 backdrop-blur-sm bg-background/80 flex justify-between items-center transition duration-500 shadow-sm ${
         show ? "transform translate-y-0" : "transform -translate-y-full"
       }`}
     >
-      <nav className="w-full flex items-center justify-between">
+      <Container className="flex justify-between py-4">
         <Drawer>
-          <DrawerTrigger>
-            <Button variant={"ghost"} className="text-xs gap-1">
-              <AlignRight size={20} /> MENU
-            </Button>
+          <DrawerTrigger className="flex items-center text-xs gap-1 hover:scale-90 duration-200">
+            <AlignRight size={20} /> MENU
           </DrawerTrigger>
           <Menu />
         </Drawer>
 
-        <span className="flex items-center gap-4">
-          <Button variant={"outline"} className="gap-1">
-            AGENDAR UMA CONSULTA <ArrowRight size={16} />
-          </Button>
-        </span>
-      </nav>
-    </header>
+        <Button variant={"outline"} className="gap-1">
+          AGENDAR UMA CONSULTA <ArrowRight size={16} />
+        </Button>
+      </Container>
+    </nav>
   );
 }
