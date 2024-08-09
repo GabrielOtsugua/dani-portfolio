@@ -1,10 +1,10 @@
 "use client";
 
-import { AlignRight, ArrowRight, Ghost, Instagram } from "lucide-react";
+import { AlignRight, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
-import Logo from "./Logo";
-import { Separator } from "./ui/separator";
+import Menu from "./Menu";
+import { Drawer, DrawerTrigger } from "./ui/drawer";
 
 export default function Header() {
   const [show, setShow] = useState(true);
@@ -37,30 +37,15 @@ export default function Header() {
         show ? "transform translate-y-0" : "transform -translate-y-full"
       }`}
     >
-      {/* <nav className="flex items-center">
-        <Button
-          variant={"secondary"}
-          className="flex items-center gap-1 text-xs"
-        >
-          <AlignRight size={20} className="text-main/60" /> MENU
-        </Button>
-        <Separator orientation="vertical" className="h-8 mx-8 bg-stone-300" />
-        <Logo />
-      </nav>
-
-      <nav className="flex items-center gap-4">
-        <Button variant={"ghost"} className="rounded-full p-2">
-          <Instagram className="text-main/60" />
-        </Button>
-        <Button>AGENDAR UMA CONSULTA</Button>
-      </nav> */}
-
       <nav className="w-full flex items-center justify-between">
-        <Button variant={"ghost"} className="flex items-center gap-1 text-xs">
-          <AlignRight size={20} /> MENU
-        </Button>
-
-        <Logo />
+        <Drawer>
+          <DrawerTrigger>
+            <Button variant={"ghost"} className="text-xs gap-1">
+              <AlignRight size={20} /> MENU
+            </Button>
+          </DrawerTrigger>
+          <Menu />
+        </Drawer>
 
         <span className="flex items-center gap-4">
           <Button variant={"outline"} className="gap-1">

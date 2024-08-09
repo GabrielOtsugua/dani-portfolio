@@ -1,5 +1,7 @@
+import Menu from "@/components/Menu";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Drawer, DrawerTrigger } from "@/components/ui/drawer";
 import { ArrowRight, Instagram, MoveDown } from "lucide-react";
 
 export default function Home() {
@@ -13,16 +15,24 @@ export default function Home() {
           Dermatologista
         </em>
 
+        <p className="absolute top-8 text-2xl font-extralight font-custom italic">
+          <span className="text-main2/60">Dra.</span> Dani Moraes
+        </p>
+
         <span className="w-[500px] flex flex-col items-start gap-4 z-10">
           <em className="text-6xl font-custom font-thin">
             Cuidando da sua pele, cuidando de você
           </em>
-          <p className="flex items-center gap-2 mt-8">
-            Conheça os tratamentos{" "}
-          </p>
-          <Button className="gap-1">
-            TRATAMENTOS <ArrowRight size={16} />
-          </Button>
+          <p className="flex items-center gap-2 mt-8">Conheça os tratamentos</p>
+
+          <Drawer>
+            <DrawerTrigger>
+              <Button className="gap-1">
+                TRATAMENTOS <ArrowRight size={16} />
+              </Button>
+            </DrawerTrigger>
+            <Menu />
+          </Drawer>
         </span>
       </div>
 
