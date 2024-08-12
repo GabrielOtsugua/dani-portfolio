@@ -1,64 +1,65 @@
 import { Instagram } from "lucide-react";
 import { Button } from "./ui/button";
-import { DrawerContent } from "./ui/drawer";
+import { DrawerClose, DrawerContent } from "./ui/drawer";
 import Link from "next/link";
+import Container from "./Container";
 
 export default function Menu() {
   return (
-    <DrawerContent className="px-16 pb-16 space-y-8 bg-main/40 text-stone-100 backdrop-blur-sm border-none">
-      <p className="flex items-center text-3xl font-custom italic font-light">
-        Tratamentos
-      </p>
-      <main className="grid grid-cols-2 gap-4 text-2xl font-custom font-light italic pb-8">
-        <Link href="" className="hover:text-main2 w-fit">
-          Tratamento específico
-        </Link>
-        <Link href="" className="hover:text-main2 w-fit">
-          Tratamento específico
-        </Link>
-        <Link href="" className="hover:text-main2 w-fit">
-          Tratamento específico
-        </Link>
-        <Link href="" className="hover:text-main2 w-fit">
-          Tratamento específico
-        </Link>
-        <Link href="" className="hover:text-main2 w-fit">
-          Tratamento específico
-        </Link>
-        <Link href="" className="hover:text-main2 w-fit">
-          Tratamento específico
-        </Link>
-        <Link href="" className="hover:text-main2 w-fit">
-          Tratamento específico
-        </Link>
-        <Link href="" className="hover:text-main2 w-fit">
-          Tratamento específico
-        </Link>
-        <Link href="" className="hover:text-main2 w-fit">
-          Tratamento específico
-        </Link>
-        <Link href="" className="hover:text-main2 w-fit">
-          Tratamento específico
-        </Link>
-      </main>
-      <footer className="grid grid-cols-2">
-        <div className="space-y-8">
-          <div className="space-y-4">
-            <p>Endereço</p>
-            <p>Rua Canadá, 215, Jd. América – São Paulo SP</p>
+    <DrawerContent className="pb-16 bg-main/40 text-stone-100 backdrop-blur-sm border-none">
+      <Container className="space-y-8">
+        <p className="flex items-center text-3xl font-custom italic font-light">
+          Tratamentos
+        </p>
+
+        <main className="grid grid-cols-2 gap-4 text-2xl font-custom font-light italic pb-8">
+          <DrawerClose asChild>
+            <Link
+              href="/tratamentos/tratamentos-capilares"
+              className="hover:text-main2 w-fit"
+            >
+              Tratamentos capilares
+            </Link>
+          </DrawerClose>
+          <DrawerClose asChild>
+            <Link
+              href="/tratamentos/injetaveis"
+              className="hover:text-main2 w-fit"
+            >
+              Injetáveis
+            </Link>
+          </DrawerClose>
+          <DrawerClose asChild>
+            <Link
+              href="/tratamentos/firmeza-e-sustentacao-da-pele"
+              className="hover:text-main2 w-fit"
+            >
+              Firmeza e sustentação da pele
+            </Link>
+          </DrawerClose>
+        </main>
+
+        <footer className="grid grid-cols-2">
+          <div>
+            <div>
+              <p className="text-lg">Endereço</p>
+              <p>Rua Canadá, 215, Jd. América – São Paulo SP</p>
+            </div>
           </div>
-          <div className="space-y-4">
-            <p>Contato</p>
-            <p>WhatsApp: (11) 95776-1003</p>
+
+          <div>
+            <p className="text-lg">Acompanhe</p>
+            <Button variant={"ghost"} className="rounded-full p-2">
+              <Link
+                href="https://www.instagram.com/dradanimoraess/"
+                target="_blank"
+              >
+                <Instagram />
+              </Link>
+            </Button>
           </div>
-        </div>
-        <div className="space-y-4">
-          <p>Acompanhe</p>
-          <Button variant={"ghost"} className="rounded-full p-2">
-            <Instagram />
-          </Button>
-        </div>
-      </footer>
+        </footer>
+      </Container>
     </DrawerContent>
   );
 }

@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import LayoutNav from "@/components/LayoutNav";
+import Container from "@/components/Container";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import Link from "next/link";
+import { ArrowRight, Instagram } from "lucide-react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +26,54 @@ export default function RootLayout({
         <LayoutNav />
 
         <main className="overflow-x-hidden">{children}</main>
+
+        <div className="bg-main/95 text-stone-100">
+          <Container className="h-screen grid grid-cols-2 gap-8 items-center">
+            <main className="space-y-8">
+              <p className="font-custom font-thin italic text-6xl w-[350px]">
+                Cuidando da sua pele, cuidando de você
+              </p>
+
+              <Button variant={"secondary"} className="gap-1">
+                AGENDAR UMA CONSULTA <ArrowRight size={16} />
+              </Button>
+            </main>
+            <div>
+              <Card className="bg-white w-96 h-96 flex justify-center items-center">
+                Imagem profissional
+              </Card>
+            </div>
+          </Container>
+        </div>
+
+        <footer className="bg-main text-background">
+          <Container className="grid grid-cols-4 gap-8 py-8">
+            <div className="flex flex-col items-start font-custom font-thin text-3xl italic text-yellow-200/60">
+              <p>Dra.</p>
+              <p>Dani</p>
+              <p>Moraes</p>
+            </div>
+            <div className="">
+              <p className="text-lg">Endereço</p>
+              <p>Rua Canadá, 215, Jd. América – São Paulo SP</p>
+            </div>
+            <div className="">
+              <p className="text-lg">Contato</p>
+              <p>WhatsApp: (11) 95776-1003</p>
+            </div>
+            <div className="">
+              <p className="text-lg">Acompanhe</p>
+              <Button variant={"ghost"} className="rounded-full p-2 text-main2">
+                <Link
+                  href="https://www.instagram.com/dradanimoraess/"
+                  target="_blank"
+                >
+                  <Instagram />
+                </Link>
+              </Button>
+            </div>
+          </Container>
+        </footer>
       </body>
     </html>
   );
