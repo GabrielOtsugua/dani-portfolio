@@ -15,16 +15,9 @@ export default function Treatments({ params }: MenuParams) {
 
   return (
     <div>
-      <Container className="flex flex-col items-center py-16 space-y-16 relative">
-        <p
-          onClick={() => router.push("/")}
-          className="absolute top-8 left-0 flex items-center gap-1 cursor-pointer"
-        >
-          <ArrowLeft size={16} /> Voltar
-        </p>
-
+      <Container className="relative flex flex-col items-center py-16 space-y-16">
         <header className="space-y-4 text-center">
-          <p className="text-3xl font-custom italic font-light">
+          <p className="text-4xl font-custom italic font-light">
             {params.type.replaceAll("-", " ")}
           </p>
           <p className="w-[800px] leading-7">

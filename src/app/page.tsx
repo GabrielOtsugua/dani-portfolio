@@ -1,11 +1,16 @@
+"use client";
+
 import Container from "@/components/Container";
 import Menu from "@/components/Menu";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Drawer, DrawerTrigger } from "@/components/ui/drawer";
-import { ArrowRight, Instagram, MoveDown } from "lucide-react";
+import { ArrowRight, MoveDown } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <div>
       <div className="relative w-full h-screen flex flex-col items-start justify-center">
@@ -51,8 +56,8 @@ export default function Home() {
       </div>
 
       <div>
-        <Container className="grid grid-cols-2 gap-8 py-16">
-          <Card className="flex justify-center items-center">
+        <Container className="grid grid-cols-2 items-center gap-8 py-16">
+          <Card className="flex justify-center items-center h-96">
             <p>Imagem profissional</p>
           </Card>
           <div className="space-y-4">
@@ -66,16 +71,20 @@ export default function Home() {
               nostrum veniam voluptatibus suscipit doloremque atque ipsum
               cumque!
             </p>
-            <Button variant={"outline"} className="gap-1">
-              INFORMAÇÃO <ArrowRight size={16} />
+            <Button
+              variant={"outline"}
+              onClick={() => router.push("/portfolio")}
+              className="gap-1"
+            >
+              SOBRE MIM <ArrowRight size={16} />
             </Button>
           </div>
         </Container>
       </div>
 
       <div>
-        <Container className="grid grid-cols-2 py-32 gap-8">
-          <Card className="flex justify-center items-center">
+        <Container className="grid grid-cols-2 items-center py-32 gap-8">
+          <Card className="flex justify-center items-center h-96">
             <p>Imagem profissional</p>
           </Card>
           <div className="space-y-4">
@@ -89,8 +98,12 @@ export default function Home() {
               nostrum veniam voluptatibus suscipit doloremque atque ipsum
               cumque!
             </p>
-            <Button variant={"outline"} className="gap-1">
-              INFORMAÇÃO <ArrowRight size={16} />
+            <Button
+              variant={"outline"}
+              onClick={() => router.push("/saude-da-pele")}
+              className="gap-1"
+            >
+              SAIBA MAIS <ArrowRight size={16} />
             </Button>
           </div>
         </Container>
