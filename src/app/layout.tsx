@@ -28,9 +28,9 @@ export default function RootLayout({
         <main className="overflow-x-hidden">{children}</main>
 
         <div className="bg-main/95 text-stone-100">
-          <Container className="h-screen grid grid-cols-2 gap-8 items-center">
+          <Container className="min-h-screen grid md:grid-cols-2 gap-8 items-center py-16">
             <main className="space-y-8">
-              <p className="font-custom font-thin italic text-6xl w-[350px]">
+              <p className="font-custom font-thin italic text-6xl md:w-full lg:w-[350px]">
                 Cuidando da sua pele, cuidando de você
               </p>
 
@@ -38,8 +38,8 @@ export default function RootLayout({
                 AGENDAR UMA CONSULTA <ArrowRight size={16} />
               </Button>
             </main>
-            <div>
-              <Card className="bg-white w-96 h-96 flex justify-center items-center">
+            <div className="hidden md:block">
+              <Card className="bg-white md:w-full lg:w-96 h-96 flex justify-center items-center">
                 Imagem profissional
               </Card>
             </div>
@@ -47,7 +47,7 @@ export default function RootLayout({
         </div>
 
         <footer className="bg-main text-background">
-          <Container className="grid grid-cols-4 gap-8 py-8">
+          <Container className="grid grid-cols-2 md:grid-cols-4 gap-8 py-8">
             <div className="flex flex-col items-start font-custom font-thin text-3xl italic text-yellow-200/60">
               <p>Dra.</p>
               <p>Dani</p>

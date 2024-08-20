@@ -12,7 +12,7 @@ export default function Menu() {
           Tratamentos
         </p>
 
-        <main className="grid grid-cols-2 gap-4 text-2xl font-custom font-light italic pb-8">
+        <main className="grid md:grid-cols-2 gap-4 text-2xl font-custom font-light italic pb-8">
           <DrawerClose asChild>
             <Link
               href="/tratamentos/tratamentos-capilares"
@@ -39,7 +39,7 @@ export default function Menu() {
           </DrawerClose>
         </main>
 
-        <footer className="grid grid-cols-2">
+        <footer className="grid grid-cols-2 gap-4">
           <div>
             <div>
               <p className="text-lg">Endereço</p>

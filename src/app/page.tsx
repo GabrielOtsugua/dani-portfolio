@@ -26,7 +26,7 @@ export default function Home() {
             <span className="text-main2/60">Dra.</span> Dani Moraes
           </p>
 
-          <span className="w-[500px] flex flex-col items-start gap-4 z-10">
+          <span className="w-full md:w-[500px] flex flex-col items-start gap-4 z-10">
             <em className="text-6xl font-custom font-extralight">
               Cuidando da sua pele, cuidando de você
             </em>
@@ -47,7 +47,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col items-center mb-8">
-        <p className="text-2xl w-[650px] text-center font-extralight">
+        <p className="text-2xl w-full md:w-[650px] mt-32 md:mt-0 text-center font-extralight">
           Um objetivo claro e essencial: melhorar a saúde e a beleza da sua pele
           com expertise dermatológica.
         </p>
@@ -56,7 +56,7 @@ export default function Home() {
       </div>
 
       <div>
-        <Container className="grid grid-cols-2 items-center gap-8 py-16">
+        <Container className="grid md:grid-cols-2 items-center gap-8 py-16">
           <Card className="flex justify-center items-center h-96">
             <p>Imagem profissional</p>
           </Card>
@@ -83,7 +83,7 @@ export default function Home() {
       </div>
 
       <div>
-        <Container className="grid grid-cols-2 items-center py-32 gap-8">
+        <Container className="grid md:grid-cols-2 items-center py-32 gap-8">
           <Card className="flex justify-center items-center h-96">
             <p>Imagem profissional</p>
           </Card>

@@ -1,8 +1,13 @@
+"use client";
+
 import Container from "@/components/Container";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, MoveDown } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function SaudeDaPele() {
+  const route = useRouter();
+
   return (
     <div>
       <div className="h-screen bg-stone-800 text-stone-100">
@@ -10,14 +15,14 @@ export default function SaudeDaPele() {
           id="background"
           className="absolute h-full w-full flex justify-center z-0 items-center"
         >
-          <p className="text-main2/20 text-[180px] font-custom italic font-extralight">
+          <p className="text-main2/20 md:text-[80px] xl:text-[150px] 2xl:text-[180px] font-custom italic font-extralight">
             Cuidando da pele
           </p>
         </div>
 
         <Container className="relative flex justify-center items-center h-full">
-          <p className="absolute top-16 left-0 text-stone-100 font-custom font-thin italic text-4xl">
-            Confiança em cada tratamento
+          <p className="absolute top-8 xl:top-16 left-0 text-stone-100 font-custom font-thin italic text-4xl">
+            Pele saudável, vida saudável
           </p>
 
           <Card className="flex justify-center items-center h-96 w-96 z-10 border bg-transparent">
@@ -36,7 +41,7 @@ export default function SaudeDaPele() {
       </div>
 
       <Container className="space-y-32 py-32">
-        <div className="w-[700px] m-auto">
+        <div className="w-full lg:w-[700px] m-auto">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
             deleniti? Ad consectetur temporibus assumenda animi libero corporis
@@ -59,7 +64,7 @@ export default function SaudeDaPele() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           <Card className="h-96 flex justify-center items-center">
             <p>Imagem trabalhando</p>
           </Card>
@@ -73,7 +78,7 @@ export default function SaudeDaPele() {
             Principais benefícios de cuidar da pele
           </p>
 
-          <ul className="grid grid-cols-4 gap-4">
+          <ul className="grid md:grid-cols-4 gap-4">
             <li className="h-40 border rounded flex justify-center items-center">
               Benefício 1
             </li>
@@ -96,26 +101,15 @@ export default function SaudeDaPele() {
             Tratamentos exclusivos
           </p>
 
-          <ul className="grid grid-cols-2 gap-4">
-            <li className="h-60 flex flex-col justify-end rounded p-4 bg-stone-700 space-y-2 cursor-pointer hover:bg-stone-700/80">
+          <ul className="grid md:grid-cols-2 gap-4">
+            <li
+              onClick={() =>
+                route.push("/tratamentos/firmeza-e-sustentacao-da-pele")
+              }
+              className="h-60 flex flex-col justify-end rounded p-4 bg-stone-700 space-y-2 cursor-pointer hover:bg-stone-700/80"
+            >
               <p className="text-3xl font-custom italic font-light">
-                Tratamento 1
-              </p>
-              <p className="flex items-center gap-1">
-                Saiba mais <ArrowRight size={16} />
-              </p>
-            </li>
-            <li className="h-60 flex flex-col justify-end rounded p-4 bg-stone-700 space-y-2 cursor-pointer hover:bg-stone-700/80">
-              <p className="text-3xl font-custom italic font-light">
-                Tratamento 2
-              </p>
-              <p className="flex items-center gap-1">
-                Saiba mais <ArrowRight size={16} />
-              </p>
-            </li>
-            <li className="h-60 flex flex-col justify-end rounded p-4 bg-stone-700 space-y-2 cursor-pointer hover:bg-stone-700/80">
-              <p className="text-3xl font-custom italic font-light">
-                Tratamento 3
+                Firmeza e sustentação da pele
               </p>
               <p className="flex items-center gap-1">
                 Saiba mais <ArrowRight size={16} />

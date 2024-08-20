@@ -41,7 +41,7 @@ export default function LayoutNav() {
       className={`sticky top-0 z-50 backdrop-blur-sm bg-background/80 flex justify-between items-center transition duration-500 shadow-sm ${
         show ? "transform translate-y-0" : "transform -translate-y-full"
       } ${
-        pathname == "/portfolio" || pathname == "saude-da-pele"
+        pathname == "/portfolio" || pathname == "/saude-da-pele"
           ? "hidden"
           : "flex"
       }`}

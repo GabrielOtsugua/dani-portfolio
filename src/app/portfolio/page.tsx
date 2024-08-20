@@ -16,13 +16,13 @@ export default function Portfolio() {
           id="background"
           className="absolute h-full w-full flex justify-center z-0 items-center"
         >
-          <p className="text-main2/20 text-[180px] font-custom italic font-extralight">
+          <p className="text-main2/20 text-[35px] md:text-[70px] xl:text-[130px] 2xl:text-[150px] font-custom italic font-extralight">
             Dra. Danielle Moraes
           </p>
         </div>
 
         <Container className="relative flex justify-center items-center h-full">
-          <p className="absolute top-16 left-0 text-stone-100 font-custom font-thin italic text-4xl">
+          <p className="absolute top-8 xl:top-16 left-0 text-stone-100 font-custom font-thin italic text-4xl">
             Confiança em cada tratamento
           </p>
 
@@ -42,14 +42,14 @@ export default function Portfolio() {
       </div>
 
       <Container className="space-y-32 py-32">
-        <div className="flex flex-col items-center gap-4">
-          <p className="w-[700px]">
+        <div className="flex flex-col items-center gap-4 md:w-full lg:w-[700px] m-auto">
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit omnis
             sed quaerat? Facere et natus fuga repudiandae quasi porro odit,
             provident amet blanditiis quae illo, quibusdam soluta, facilis
             obcaecati expedita?
           </p>
-          <p className="w-[700px]">
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ea
             voluptate sapiente et nihil maxime temporibus ipsum, laboriosam
             dolores hic voluptas sint enim explicabo eum, vel repellendus! At,
@@ -57,7 +57,7 @@ export default function Portfolio() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           <Card className="flex justify-center items-center h-96 w-full z-10">
             <p>Imagem profissional</p>
           </Card>
@@ -66,7 +66,7 @@ export default function Portfolio() {
           </Card>
         </div>
 
-        <div className="grid grid-cols-2 items-center gap-8">
+        <div className="grid md:grid-cols-2 items-center gap-8">
           <div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
@@ -89,7 +89,7 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 items-center gap-8">
+        <div className="grid md:grid-cols-2 items-center gap-8">
           <Card className="flex justify-center items-center h-96">
             <p>Imagem profissional</p>
           </Card>
