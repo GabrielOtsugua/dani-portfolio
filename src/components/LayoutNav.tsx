@@ -1,17 +1,15 @@
 "use client";
 
-import { AlignRight, ArrowLeft, ArrowRight } from "lucide-react";
+import { AlignRight, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
 import Menu from "./Menu";
 import { Drawer, DrawerTrigger } from "./ui/drawer";
 import Container from "./Container";
-import { Separator } from "./ui/separator";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 export default function LayoutNav() {
   const pathname = usePathname();
-  const router = useRouter();
   const [show, setShow] = useState(true);
   let lastScrollY = 0;
 
