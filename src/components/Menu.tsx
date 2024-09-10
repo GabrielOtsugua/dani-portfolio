@@ -6,7 +6,7 @@ import Container from "./Container";
 
 export default function Menu() {
   return (
-    <DrawerContent className="pb-16 bg-main/40 text-stone-100 backdrop-blur-sm border-none">
+    <DrawerContent className="pb-16 bg-stone-600/60 text-stone-100 backdrop-blur-sm border-none">
       <Container className="space-y-8">
         <p className="flex items-center text-3xl font-custom italic font-light">
           Tratamentos
@@ -16,7 +16,7 @@ export default function Menu() {
           <DrawerClose asChild>
             <Link
               href="/tratamentos/tratamentos-capilares"
-              className="hover:text-main2 w-fit"
+              className="hover:text-stone-400 w-fit"
             >
               Tratamentos capilares
             </Link>
@@ -24,7 +24,7 @@ export default function Menu() {
           <DrawerClose asChild>
             <Link
               href="/tratamentos/injetaveis"
-              className="hover:text-main2 w-fit"
+              className="hover:text-stone-400 w-fit"
             >
               Injetáveis
             </Link>
@@ -32,7 +32,7 @@ export default function Menu() {
           <DrawerClose asChild>
             <Link
               href="/tratamentos/firmeza-e-sustentacao-da-pele"
-              className="hover:text-main2 w-fit"
+              className="hover:text-stone-400 w-fit"
             >
               Firmeza e sustentação da pele
             </Link>

@@ -1,6 +1,6 @@
 "use client";
 
-import { slideDown, slideRightScroll } from "@/animations/animations";
+import { slideDown, slideRight } from "@/animations/animations";
 import Container from "@/components/Container";
 import TreatmentsDialogData from "@/components/TreatmentsDialogData";
 import { Button } from "@/components/ui/button";
@@ -18,7 +18,7 @@ export default function Treatments({ params }: MenuParams) {
     slideDown(".tratamentos1", 0);
     slideDown(".tratamentos2", 0.2);
 
-    slideRightScroll(".tratamentos3", 0.4);
+    slideRight(".tratamentos3", 0.4);
   });
 
   return (
@@ -43,14 +43,14 @@ export default function Treatments({ params }: MenuParams) {
         <div className="tratamentos3 grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 w-full">
           <Dialog>
             <DialogTrigger asChild>
-              <Card className="flex items-center justify-between p-4 w-full border-main2/20 cursor-pointer hover:bg-muted">
-                <p className="w-[90%] line-clamp-1">Tipos 1</p>
+              <Card className="flex items-center justify-between p-4 w-full border-stone-300 cursor-pointer hover:bg-muted">
+                <p className="w-[90%] line-clamp-1">Tipo 1</p>
                 <ArrowRight size={16} />
               </Card>
             </DialogTrigger>
             <DialogTrigger asChild>
-              <Card className="flex items-center justify-between p-4 w-full border-main2/20 cursor-pointer hover:bg-muted">
-                <p className="w-[90%] line-clamp-1">Tipos 2</p>
+              <Card className="flex items-center justify-between p-4 w-full border-stone-300 cursor-pointer hover:bg-muted">
+                <p className="w-[90%] line-clamp-1">Tipo 2</p>
                 <ArrowRight size={16} />
               </Card>
             </DialogTrigger>

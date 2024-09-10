@@ -29,9 +29,9 @@ export default function RootLayout({
 
         <FinalPresentation />
 
-        <footer className="bg-main text-background">
+        <footer className="bg-stone-800 text-background">
           <Container className="grid grid-cols-2 md:grid-cols-4 gap-8 py-8">
-            <div className="flex flex-col items-start font-custom font-thin text-3xl italic text-yellow-200/60">
+            <div className="flex flex-col items-start font-custom font-light text-3xl italic text-stone-500">
               <p>Dra.</p>
               <p>Dani</p>
               <p>Moraes</p>
@@ -46,7 +46,10 @@ export default function RootLayout({
             </div>
             <div className="">
               <p className="text-lg">Acompanhe</p>
-              <Button variant={"ghost"} className="rounded-full p-2 text-main2">
+              <Button
+                variant={"ghost"}
+                className="rounded-full p-2 text-stone-500"
+              >
                 <Link
                   href="https://www.instagram.com/dradanimoraess/"
                   target="_blank"

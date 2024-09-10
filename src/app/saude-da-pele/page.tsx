@@ -9,9 +9,12 @@ import {
   slideRightScroll,
 } from "@/animations/animations";
 import Container from "@/components/Container";
+import Menu from "@/components/Menu";
+import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Drawer, DrawerTrigger } from "@/components/ui/drawer";
 import { useGSAP } from "@gsap/react";
-import { ArrowRight, MoveDown } from "lucide-react";
+import { ArrowDown, ArrowRight, MoveDown } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 export default function SaudeDaPele() {
@@ -31,16 +34,18 @@ export default function SaudeDaPele() {
     slideDownScroll(".saude7", 0);
 
     cascadeScroll(".cascadeScroll");
+
+    slideDownScroll(".saude8", 0);
   });
 
   return (
     <div>
-      <div className="h-screen bg-stone-800 text-stone-100">
+      <div className="relative h-screen bg-stone-800 text-stone-100">
         <div
           id="background"
           className="absolute h-full w-full flex justify-center z-0 items-center"
         >
-          <p className="saude1 text-main2/20 md:text-[80px] xl:text-[150px] 2xl:text-[180px] font-custom italic font-extralight">
+          <p className="saude1 text-stone-500/20 text-[44px] md:text-[80px] xl:text-[150px] 2xl:text-[180px] font-custom italic font-extralight">
             Cuidando da pele
           </p>
         </div>
@@ -59,33 +64,26 @@ export default function SaudeDaPele() {
             <MoveDown
               size={96}
               strokeWidth={0.5}
-              className="-translate-x-11 text-main2/40"
+              className="-translate-x-11 text-stone-500"
             />
           </span>
         </Container>
       </div>
 
       <Container className="space-y-32 py-32">
-        <div className="saude4 w-full lg:w-[700px] m-auto">
+        <div className="saude4 w-full lg:w-[700px] m-auto leading-7">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-            deleniti? Ad consectetur temporibus assumenda animi libero corporis
-            soluta, autem asperiores laboriosam? Porro odio est nisi aut tenetur
-            atque ipsa explicabo?
+            Cuidar da pele vai além de questões estéticas—é um passo essencial
+            para manter a saúde geral do corpo. A pele é o maior órgão do corpo
+            humano e atua como uma barreira protetora contra fatores externos,
+            como poluição, raios UV, e micro-organismos.
           </p>
           <br />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            iste, quam pariatur quo in assumenda a enim temporibus rem deserunt
-            asperiores delectus est optio aliquam, officiis adipisci unde ullam
-            neque?
-          </p>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-            repudiandae sint totam ad dicta dolore placeat, est iusto rerum enim
-            non magnam accusamus illo vero quo incidunt doloribus. Nihil,
-            recusandae?
+            Manter uma rotina adequada de cuidados ajuda a prevenir problemas
+            como acne, ressecamento, envelhecimento precoce e até mesmo doenças
+            mais graves, como o câncer de pele. Investir no cuidado diário da
+            pele é investir na sua saúde e bem-estar.
           </p>
         </div>
 
@@ -103,46 +101,43 @@ export default function SaudeDaPele() {
             Principais benefícios de cuidar da pele
           </p>
 
-          <ul className="grid md:grid-cols-4 gap-4">
-            <li className="cascadeScroll h-40 border rounded flex justify-center items-center">
-              Benefício 1
+          <ul className="grid md:grid-cols-4 gap-4 text-center">
+            <li className="cascadeScroll h-40 rounded flex flex-col justify-start items-center gap-2 p-4">
+              <ArrowDown className="text-stone-500" /> Melhoria na aparência e
+              autoestima
             </li>
-            <li className="cascadeScroll h-40 border rounded flex justify-center items-center">
-              Benefício 2
+            <li className="cascadeScroll h-40 rounded flex flex-col justify-start items-center gap-2 p-4">
+              <ArrowDown className="text-stone-500" /> Prevenção do
+              envelhecimento precoce
             </li>
-            <li className="cascadeScroll h-40 border rounded flex justify-center items-center">
-              Benefício 3
+            <li className="cascadeScroll h-40 rounded flex flex-col justify-start items-center gap-2 p-4">
+              <ArrowDown className="text-stone-500" /> Proteção contra danos
+              ambientais
             </li>
-            <li className="cascadeScroll h-40 border rounded flex justify-center items-center">
-              Benefício 4
+            <li className="cascadeScroll h-40 rounded flex flex-col justify-start items-center gap-2 p-4">
+              <ArrowDown className="text-stone-500" /> Prevenção de doenças
             </li>
           </ul>
         </div>
-      </Container>
 
-      {/* <div className="bg-stone-800 text-stone-100">
-        <Container className="space-y-8 py-32">
-          <p className="text-5xl font-custom font-extralight italic">
-            Tratamentos exclusivos
+        <div className="saude8 space-y-8 w-full lg:w-[700px] m-auto leading-7 text-center">
+          <p>
+            Seja para melhorar a aparência, tratar condições específicas ou
+            manter a saúde da pele, há uma solução eficaz esperando por você.
+            Descubra como cada tratamento pode beneficiar sua qualidade de vida
+            e potencializar seu bem-estar.
           </p>
 
-          <ul className="grid md:grid-cols-2 gap-4">
-            <li
-              onClick={() =>
-                route.push("/tratamentos/firmeza-e-sustentacao-da-pele")
-              }
-              className="h-60 flex flex-col justify-end rounded p-4 bg-stone-700 space-y-2 cursor-pointer hover:bg-stone-700/80"
-            >
-              <p className="text-3xl font-custom italic font-light">
-                Firmeza e sustentação da pele
-              </p>
-              <p className="flex items-center gap-1">
-                Saiba mais <ArrowRight size={16} />
-              </p>
-            </li>
-          </ul>
-        </Container>
-      </div> */}
+          <Drawer>
+            <DrawerTrigger asChild>
+              <Button className="gap-1">
+                TRATAMENTOS <ArrowRight size={16} />
+              </Button>
+            </DrawerTrigger>
+            <Menu />
+          </Drawer>
+        </div>
+      </Container>
     </div>
   );
 }

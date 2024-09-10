@@ -27,6 +27,14 @@ export const slideDown = (target: string, delay: number) => {
   gsap.from(target, { y: -32, opacity: 0, delay: delay });
 };
 
+export const slideRight = (target: string, delay: number) => {
+  gsap.from(target, { x: -32, opacity: 0, delay: delay });
+};
+
+export const slideLeft = (target: string, delay: number) => {
+  gsap.from(target, { x: 32, opacity: 0, delay: delay });
+};
+
 export const slideRightScroll = (target: string, delay: number) => {
   gsap.from(target, {
     scrollTrigger: {

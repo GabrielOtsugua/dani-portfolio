@@ -8,7 +8,12 @@ import { Drawer, DrawerTrigger } from "@/components/ui/drawer";
 import { ArrowRight, MoveDown } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useGSAP } from "@gsap/react";
-import { fadeIn, slideDown, slideDownScroll } from "@/animations/animations";
+import {
+  fadeIn,
+  slideDown,
+  slideDownScroll,
+  slideLeftScroll,
+} from "@/animations/animations";
 
 export default function Home() {
   const router = useRouter();
@@ -20,8 +25,8 @@ export default function Home() {
     slideDown(".home3", 0.5);
 
     slideDownScroll(".home4", 0);
-    slideDownScroll(".home5", 0);
-    slideDownScroll(".home6", 0);
+    slideLeftScroll(".home5", 0);
+    slideLeftScroll(".home6", 0);
   });
 
   return (
@@ -30,13 +35,13 @@ export default function Home() {
         <Container className="grid z-10">
           <em
             id="dermatologista"
-            className="home1 absolute top-[20%] left-0 z-0 font-custom font-thin text-[450px] text-stone-200/30 select-none"
+            className="home1 absolute top-[20%] left-0 z-0 font-custom font-thin text-[450px] text-stone-500/5 select-none"
           >
             Dermatologista
           </em>
 
-          <p className="home2 absolute top-8 text-2xl font-light font-custom italic text-main2/60">
-            <span className="text-main2/60">Dra.</span> Dani Moraes
+          <p className="home2 absolute top-8 text-2xl font-light font-custom italic text-main2/60 text-stone-500">
+            Dra. Dani Moraes
           </p>
 
           <span className="home3 w-full md:w-[500px] flex flex-col items-start gap-4 z-10">
@@ -65,7 +70,7 @@ export default function Home() {
           com expertise dermatológica.
         </p>
 
-        <MoveDown className="w-full my-8 text-main2/40" />
+        <MoveDown className="w-full my-8 text-stone-500" />
       </div>
 
       <div>
@@ -78,11 +83,10 @@ export default function Home() {
               Confiança em cada tratamento
             </em>
             <p className="leading-7">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-              molestias quisquam culpa omnis veniam sit atque. Laborum
-              dignissimos, necessitatibus perferendis delectus blanditiis
-              nostrum veniam voluptatibus suscipit doloremque atque ipsum
-              cumque!
+              Formada no Rio de Janeiro, Danielle possui ampla experiência
+              profissional e um vasto conhecimento médico. Sua dedicação e
+              competência resultam em tratamentos eficazes, refletidos na
+              satisfação de seus muitos pacientes.
             </p>
             <Button
               variant={"outline"}
@@ -105,11 +109,11 @@ export default function Home() {
               Pele saudável, vida saudável
             </em>
             <p className="leading-7">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-              molestias quisquam culpa omnis veniam sit atque. Laborum
-              dignissimos, necessitatibus perferendis delectus blanditiis
-              nostrum veniam voluptatibus suscipit doloremque atque ipsum
-              cumque!
+              A Dr.ª Danielle é dermatologista especializada em cuidados da pele
+              e cabelos, combinando conhecimentos modernos com um atendimento
+              acolhedor. Comprometida com a prevenção e educação em saúde, ela
+              busca proporcionar aos seus pacientes uma pele saudável e
+              bem-estar geral.
             </p>
             <Button
               variant={"outline"}
