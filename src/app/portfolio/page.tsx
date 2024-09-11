@@ -88,7 +88,7 @@ export default function Portfolio() {
         <div className="portfolio7 grid md:grid-cols-2 items-center gap-8">
           <div>
             <p className="leading-7">
-              Com um olhar atencioso e dedicação, Romana oferece cuidados
+              Com um olhar atencioso e dedicação, Danielle oferece cuidados
               dermatológicos com protocolos exclusivos e personalizados,
               proporcionando uma abordagem única para cada paciente. Seu
               comprometimento em tornar o tratamento mais leve e acessível

@@ -73,7 +73,7 @@ export default function SaudeDaPele() {
       <Container className="space-y-32 py-32">
         <div className="saude4 w-full lg:w-[700px] m-auto leading-7">
           <p>
-            Cuidar da pele vai além de questões estéticas—é um passo essencial
+            Cuidar da pele vai além de questões estéticas, é um passo essencial
             para manter a saúde geral do corpo. A pele é o maior órgão do corpo
             humano e atua como uma barreira protetora contra fatores externos,
             como poluição, raios UV, e micro-organismos.

@@ -43,7 +43,7 @@ export default function Menu() {
           <div>
             <div>
               <p className="text-lg">Endereço</p>
-              <p>Rua Canadá, 215, Jd. América – São Paulo SP</p>
+              <p>Rua Exemplo, 111, Bairro Exemplo – São Paulo SP</p>
             </div>
           </div>
 

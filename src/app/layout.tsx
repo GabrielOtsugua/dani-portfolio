@@ -38,11 +38,11 @@ export default function RootLayout({
             </div>
             <div className="">
               <p className="text-lg">Endereço</p>
-              <p>Rua Canadá, 215, Jd. América – São Paulo SP</p>
+              <p>Rua Exemplo, 111, Bairro Exemplo – São Paulo SP</p>
             </div>
             <div className="">
               <p className="text-lg">Contato</p>
-              <p>WhatsApp: (11) 95776-1003</p>
+              <p>WhatsApp: (11) 99111-1111</p>
             </div>
             <div className="">
               <p className="text-lg">Acompanhe</p>
