@@ -13,7 +13,7 @@ interface MenuParams {
   params: { type: string };
 }
 
-export default function Treatments({ params }: MenuParams) {
+export default function Tratamentos({ params }: MenuParams) {
   useGSAP(() => {
     slideDown(".tratamentos1", 0);
     slideDown(".tratamentos2", 0.2);
