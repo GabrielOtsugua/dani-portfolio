@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 import { DrawerClose, DrawerContent } from "./ui/drawer";
 import Link from "next/link";
 import Container from "./Container";
+import { menu } from "@/data/data";
 
 export default function Menu() {
   return (
@@ -13,30 +14,16 @@ export default function Menu() {
         </p>
 
         <main className="grid md:grid-cols-2 gap-4 text-2xl font-custom font-light italic pb-8">
-          <DrawerClose asChild>
-            <Link
-              href="/tratamentos/tratamentos-capilares"
-              className="hover:text-stone-400 w-fit"
-            >
-              Tratamentos capilares
-            </Link>
-          </DrawerClose>
-          <DrawerClose asChild>
-            <Link
-              href="/tratamentos/injetaveis"
-              className="hover:text-stone-400 w-fit"
-            >
-              Injetáveis
-            </Link>
-          </DrawerClose>
-          <DrawerClose asChild>
-            <Link
-              href="/tratamentos/firmeza-e-sustentacao-da-pele"
-              className="hover:text-stone-400 w-fit"
-            >
-              Firmeza e sustentação da pele
-            </Link>
-          </DrawerClose>
+          {menu.map((item) => (
+            <DrawerClose asChild>
+              <Link
+                href={`/tratamentos/${item.href}`}
+                className="hover:text-stone-400 w-fit"
+              >
+                {item.nome_tratamento}
+              </Link>
+            </DrawerClose>
+          ))}
         </main>
 
         <footer className="grid grid-cols-2 gap-4">
