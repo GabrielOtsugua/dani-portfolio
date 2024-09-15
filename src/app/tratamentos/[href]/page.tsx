@@ -42,7 +42,7 @@ export default function Tratamentos({ params }: MenuParams) {
 
         <div className="tratamentos3 grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 w-full">
           {tratamento_encontrado?.tipos?.map((item) => (
-            <Dialog>
+            <Dialog key={item.id}>
               <DialogTrigger asChild>
                 <Card className="flex items-center justify-between p-4 w-full border-stone-300 cursor-pointer hover:bg-muted">
                   <p className="w-[90%] line-clamp-1">{item.nome}</p>

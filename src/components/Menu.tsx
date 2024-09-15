@@ -15,7 +15,7 @@ export default function Menu() {
 
         <main className="grid md:grid-cols-2 gap-4 text-2xl font-custom font-light italic pb-8">
           {menu.map((item) => (
-            <DrawerClose asChild>
+            <DrawerClose asChild key={item.id}>
               <Link
                 href={`/tratamentos/${item.href}`}
                 className="hover:text-stone-400 w-fit"

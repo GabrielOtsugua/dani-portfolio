@@ -9,11 +9,13 @@ export const menu = [
       "Nossos tratamentos faciais são personalizados para cuidar da pele, promovendo hidratação, rejuvenescimento e combate a sinais de envelhecimento, manchas e acne. Utilizamos técnicas avançadas e produtos de qualidade para deixar sua pele saudável e radiante.",
     tipos: [
       {
+        id: uuid(),
         nome: "Manchas e cicatrizes",
         descricao:
           "Oferecemos tratamentos específicos para reduzir manchas e cicatrizes no rosto, promovendo uniformidade e suavidade da pele. Utilizamos técnicas avançadas para clareamento e regeneração, visando uma pele mais saudável e com aparência rejuvenescida.",
       },
       {
+        id: uuid(),
         nome: "Firmeza e sustentação",
         descricao:
           "Nossos tratamentos para firmeza e sustentação do rosto ajudam a combater a flacidez, restaurando a elasticidade e o contorno facial. Utilizamos técnicas que estimulam a produção de colágeno, garantindo uma pele mais firme e rejuvenescida.",
@@ -35,11 +37,13 @@ export const menu = [
       "Nossos tratamentos corporais promovem relaxamento, hidratação e melhora da aparência da pele. São indicados para combater celulite, flacidez e promover bem-estar geral, utilizando técnicas eficazes e produtos de qualidade.",
     tipos: [
       {
+        id: uuid(),
         nome: "Manchas e cicatrizes",
         descricao:
           "Tratamentos voltados para reduzir manchas e cicatrizes no corpo, melhorando a textura e o tom da pele. Utilizamos técnicas especializadas que promovem a regeneração e uniformização, deixando a pele mais saudável e uniforme.",
       },
       {
+        id: uuid(),
         nome: "Firmeza e sustentação",
         descricao:
           "Tratamentos para melhorar a firmeza e sustentação do corpo, combatendo a flacidez e restaurando a elasticidade da pele. Utilizamos técnicas que estimulam a produção de colágeno e tonificam a pele, promovendo um contorno mais definido e uma aparência mais jovem.",
