@@ -6,6 +6,7 @@ import Container from "@/components/Container";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Instagram } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa6";
 import FinalPresentation from "@/components/FinalPresentation";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -38,25 +39,32 @@ export default function RootLayout({
             </div>
             <div className="">
               <p className="text-lg">Endereço</p>
-              <p>Rua Exemplo, 111, Bairro Exemplo – São Paulo SP</p>
+              <p>
+                Rua Luis Antônio de Andrade Vieira, 216, Boqueirão – Praia
+                Grande SP (sala 512)
+              </p>
             </div>
             <div className="">
               <p className="text-lg">Contato</p>
-              <p>WhatsApp: (11) 99111-1111</p>
+              <p>WhatsApp: (13) 99805-1611</p>
             </div>
             <div className="">
               <p className="text-lg">Acompanhe</p>
-              <Button
-                variant={"ghost"}
-                className="rounded-full p-2 text-stone-500"
-              >
-                <Link
-                  href="https://www.instagram.com/dradanimoraess/"
-                  target="_blank"
-                >
-                  <Instagram />
-                </Link>
-              </Button>
+              <span className="flex gap-2">
+                <Button variant={"ghost"} className="rounded-full p-2">
+                  <Link
+                    href="https://www.instagram.com/dradanimoraess/"
+                    target="_blank"
+                  >
+                    <Instagram />
+                  </Link>
+                </Button>
+                <Button variant={"ghost"} className="rounded-full p-2">
+                  <Link href="">
+                    <FaWhatsapp size={24} />
+                  </Link>
+                </Button>
+              </span>
             </div>
           </Container>
         </footer>

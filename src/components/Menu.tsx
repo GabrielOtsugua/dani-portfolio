@@ -1,4 +1,5 @@
 import { Instagram } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa6";
 import { Button } from "./ui/button";
 import { DrawerClose, DrawerContent } from "./ui/drawer";
 import Link from "next/link";
@@ -24,26 +25,47 @@ export default function Menu() {
               </Link>
             </DrawerClose>
           ))}
+
+          <DrawerClose asChild>
+            <Link href="/portfolio" className="hover:text-stone-400 w-fit">
+              Dra. Danielle Moraes
+            </Link>
+          </DrawerClose>
+          <DrawerClose asChild>
+            <Link href="/contato" className="hover:text-stone-400 w-fit">
+              Contato
+            </Link>
+          </DrawerClose>
         </main>
 
         <footer className="grid grid-cols-2 gap-4">
           <div>
             <div>
               <p className="text-lg">Endereço</p>
-              <p>Rua Exemplo, 111, Bairro Exemplo – São Paulo SP</p>
+              <p>
+                Rua Luis Antônio de Andrade Vieira, 216, Boqueirão – Praia
+                Grande SP (sala 512)
+              </p>
             </div>
           </div>
 
           <div>
             <p className="text-lg">Acompanhe</p>
-            <Button variant={"ghost"} className="rounded-full p-2">
-              <Link
-                href="https://www.instagram.com/dradanimoraess/"
-                target="_blank"
-              >
-                <Instagram />
-              </Link>
-            </Button>
+            <span className="flex gap-2">
+              <Button variant={"ghost"} className="rounded-full p-2">
+                <Link
+                  href="https://www.instagram.com/dradanimoraess/"
+                  target="_blank"
+                >
+                  <Instagram />
+                </Link>
+              </Button>
+              <Button variant={"ghost"} className="rounded-full p-2">
+                <Link href="">
+                  <FaWhatsapp size={24} />
+                </Link>
+              </Button>
+            </span>
           </div>
         </footer>
       </Container>
