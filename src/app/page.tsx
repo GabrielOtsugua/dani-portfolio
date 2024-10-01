@@ -14,6 +14,9 @@ import {
   slideDownScroll,
   slideLeftScroll,
 } from "@/animations/animations";
+import Image from "next/image";
+import imagem_1 from "@/../public/imagem-1.jpg";
+import imagem_2 from "@/../public/imagem-2.jpg";
 
 export default function Home() {
   const router = useRouter();
@@ -74,9 +77,13 @@ export default function Home() {
       </div>
 
       <div>
-        <Container className="home5 grid md:grid-cols-2 items-center gap-8 py-16">
-          <Card className="flex justify-center items-center h-96">
-            <p>Imagem profissional</p>
+        <Container className="home5 grid md:grid-cols-2 items-center py-16 gap-8">
+          <Card className="h-[600px] border-none shadow-none">
+            <Image
+              src={imagem_1}
+              alt="imagem profissional"
+              className="h-full rounded object-contain opacity-85"
+            />
           </Card>
           <div className="space-y-4">
             <em className="text-4xl font-custom font-light">
@@ -99,10 +106,14 @@ export default function Home() {
         </Container>
       </div>
 
-      <div>
-        <Container className="home6 grid md:grid-cols-2 items-center py-32 gap-8">
-          <Card className="flex justify-center items-center h-96">
-            <p>Imagem profissional</p>
+      <div className="mb-16">
+        <Container className="home6 grid md:grid-cols-2 items-center py-16 gap-8 overflow-hidden">
+          <Card className="h-[600px] border-none shadow-none">
+            <Image
+              src={imagem_2}
+              alt=""
+              className="h-full rounded object-contain opacity-85"
+            />
           </Card>
           <div className="space-y-4">
             <em className="text-4xl font-custom font-light">

@@ -15,13 +15,16 @@ import { Card } from "@/components/ui/card";
 import { Drawer, DrawerTrigger } from "@/components/ui/drawer";
 import { useGSAP } from "@gsap/react";
 import { ArrowDown, ArrowRight, MoveDown } from "lucide-react";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
+import imagem_6 from "@/../public/imagem-6.jpg";
+import imagem_7 from "@/../public/imagem-7.jpg";
 
 export default function SaudeDaPele() {
   const route = useRouter();
 
   useGSAP(() => {
-    fadeIn(".saude1", 0, 3);
+    fadeIn(".saude1", 0, 2);
 
     slideDown(".saude2", 0);
     slideDown(".saude3", 0.5);
@@ -45,7 +48,7 @@ export default function SaudeDaPele() {
           id="background"
           className="absolute h-full w-full flex justify-center z-0 items-center"
         >
-          <p className="saude1 text-stone-500/20 text-[44px] md:text-[80px] xl:text-[150px] 2xl:text-[180px] font-custom italic font-extralight">
+          <p className="saude1 text-stone-500 text-[44px] md:text-[80px] xl:text-[150px] 2xl:text-[180px] font-custom italic font-extralight">
             Cuidando da pele
           </p>
         </div>
@@ -55,9 +58,9 @@ export default function SaudeDaPele() {
             Pele saudável, vida saudável
           </p>
 
-          <Card className="saude3 flex justify-center items-center h-96 w-96 z-10 border bg-transparent">
+          {/* <Card className="saude3 flex justify-center items-center h-96 w-96 z-10 border bg-transparent">
             <p className="text-stone-100">Imagem profissional</p>
-          </Card>
+          </Card> */}
 
           <span className="absolute -bottom-12 left-0">
             <p>Saiba mais</p>
@@ -88,11 +91,19 @@ export default function SaudeDaPele() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <Card className="saude5 h-96 flex justify-center items-center">
-            <p>Imagem trabalhando</p>
+          <Card className="saude5 h-[600px] border-none shadow-none">
+            <Image
+              src={imagem_7}
+              alt="imagem profissional"
+              className="h-full object-contain"
+            />
           </Card>
-          <Card className="saude6 h-96 flex justify-center items-center">
-            <p>Imagem trabalhando</p>
+          <Card className="saude6 h-[600px] border-none shadow-none">
+            <Image
+              src={imagem_6}
+              alt="imagem profissional"
+              className="h-full object-contain"
+            />
           </Card>
         </div>
 

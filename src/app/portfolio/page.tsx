@@ -12,13 +12,18 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useGSAP } from "@gsap/react";
 import { ArrowRight, MoveDown } from "lucide-react";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
+import imagem_2 from "@/../public/imagem-2.jpg";
+import imagem_3 from "@/../public/imagem-3.jpg";
+import imagem_5 from "@/../public/imagem-5.jpg";
+import imagem_4 from "@/../public/imagem-4.jpg";
 
 export default function Portfolio() {
   const router = useRouter();
 
   useGSAP(() => {
-    fadeIn(".portfolio1", 0, 3);
+    fadeIn(".portfolio1", 0, 2);
 
     slideDown(".portfolio2", 0);
     slideDown(".portfolio3", 0.5);
@@ -37,7 +42,7 @@ export default function Portfolio() {
           id="background"
           className="absolute h-full w-full flex justify-center z-0 items-center"
         >
-          <p className="portfolio1 text-stone-500/20 text-[35px] md:text-[70px] xl:text-[130px] 2xl:text-[150px] font-custom italic font-extralight">
+          <p className="portfolio1 text-stone-500 text-[35px] md:text-[70px] xl:text-[130px] 2xl:text-[150px] font-custom italic font-extralight">
             Dra. Danielle Moraes
           </p>
         </div>
@@ -47,9 +52,13 @@ export default function Portfolio() {
             Confiança em cada tratamento
           </p>
 
-          <Card className="portfolio3 flex justify-center items-center h-96 w-96 z-10 border bg-transparent">
-            <p className="text-stone-100">Imagem profissional</p>
-          </Card>
+          {/* <Card className="portfolio3 h-[675px] w-[550px] z-10 border-none">
+            <Image
+              src={imagem_4}
+              alt=""
+              className="w-full h-full object-cover rounded"
+            />
+          </Card> */}
 
           <span className="absolute -bottom-12 left-0">
             <p>Sobre mim</p>
@@ -77,11 +86,19 @@ export default function Portfolio() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <Card className="portfolio5 flex justify-center items-center h-96 w-full z-10">
-            <p>Imagem profissional</p>
+          <Card className="portfolio5 h-[600px] border-none shadow-none">
+            <Image
+              src={imagem_3}
+              alt="imagem profissional"
+              className="h-full object-contain"
+            />
           </Card>
-          <Card className="portfolio6 flex justify-center items-center h-96 w-full z-10">
-            <p>Imagem profissional</p>
+          <Card className="portfolio6 h-[600px] border-none shadow-none">
+            <Image
+              src={imagem_5}
+              alt="imagem profissional"
+              className="h-full object-contain"
+            />
           </Card>
         </div>
 
@@ -97,15 +114,23 @@ export default function Portfolio() {
             </p>
           </div>
           <div>
-            <Card className="flex justify-center items-center h-96 w-full z-10">
-              <p>Imagem profissional</p>
+            <Card className="h-[600px] border-none shadow-none">
+              <Image
+                src={imagem_4}
+                alt="imagem profissional"
+                className="h-full object-contain"
+              />
             </Card>
           </div>
         </div>
 
         <div className="portfolio8 grid md:grid-cols-2 items-center gap-8">
-          <Card className="flex justify-center items-center h-96">
-            <p>Imagem profissional</p>
+          <Card className="flex justify-center items-center h-[600px] border-none shadow-none">
+            <Image
+              src={imagem_2}
+              alt="imagem profissional"
+              className="h-full object-contain"
+            />
           </Card>
           <div className="space-y-4">
             <em className="text-4xl font-custom font-light">

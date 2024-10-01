@@ -6,6 +6,8 @@ import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { useGSAP } from "@gsap/react";
 import { slideLeft, slideRight } from "@/animations/animations";
+import imagem_1_recortado from "@/../public/imagem-1-recortado.webp";
+import Image from "next/image";
 
 export default function FinalPresentation() {
   useGSAP(() => {
@@ -25,11 +27,15 @@ export default function FinalPresentation() {
             AGENDAR UMA CONSULTA <ArrowRight size={16} />
           </Button>
         </main>
-        <div className="finalPresentation2 hidden md:block">
-          <Card className="bg-white md:w-full lg:w-96 h-96 flex justify-center items-center">
-            Imagem profissional
+        {/* <div className="finalPresentation2 hidden md:block">
+          <Card className="h-[600px] border-none bg-transparent">
+            <Image
+              src={imagem_1_recortado}
+              alt=""
+              className="h-full rounded object-contain bg-transparent"
+            />
           </Card>
-        </div>
+        </div> */}
       </Container>
     </div>
   );
