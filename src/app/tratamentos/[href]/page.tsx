@@ -9,6 +9,8 @@ import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 import { menu } from "@/data/data";
 import { useGSAP } from "@gsap/react";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 interface MenuParams {
   params: { href: string };
@@ -24,6 +26,8 @@ export default function Tratamentos({ params }: MenuParams) {
 
   const tratamento_encontrado = menu.find((item) => item.href == params.href);
 
+  const router = useRouter();
+
   return (
     <div>
       <Container className="relative flex flex-col items-center py-16 space-y-16">
@@ -36,8 +40,10 @@ export default function Tratamentos({ params }: MenuParams) {
           </p>
         </header>
 
-        <Button className="tratamentos2 gap-1">
-          ENCONTRE O TRATAMENTO IDEAL <ArrowRight size={16} />
+        <Button asChild className="tratamentos2 gap-1">
+          <Link href="https://wa.me/13998051611" target="_blank">
+            ENCONTRE O TRATAMENTO IDEAL <ArrowRight size={16} />
+          </Link>
         </Button>
 
         <div className="tratamentos3 grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 w-full">

@@ -6,8 +6,6 @@ import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { useGSAP } from "@gsap/react";
 import { slideLeft, slideRight } from "@/animations/animations";
-import imagem_1_recortado from "@/../public/imagem-1-recortado.webp";
-import Image from "next/image";
 
 export default function FinalPresentation() {
   useGSAP(() => {

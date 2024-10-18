@@ -7,6 +7,7 @@ import Menu from "./Menu";
 import { Drawer, DrawerTrigger } from "./ui/drawer";
 import Container from "./Container";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function LayoutNav() {
   const pathname = usePathname();
@@ -54,8 +55,10 @@ export default function LayoutNav() {
           </Drawer>
         </span>
 
-        <Button variant={"outline"} className="gap-1">
-          AGENDAR UMA CONSULTA <ArrowRight size={16} />
+        <Button asChild variant={"outline"} className="gap-1">
+          <Link href="https://wa.me/13998051611" target="_blank">
+            AGENDAR UMA CONSULTA <ArrowRight size={16} />
+          </Link>
         </Button>
       </Container>
     </nav>

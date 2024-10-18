@@ -21,6 +21,9 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        "3xl": "1600px",
+      },
       colors: {
         main: "#422006",
         main2: "#a16207",

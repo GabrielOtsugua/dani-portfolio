@@ -60,7 +60,7 @@ export default function RootLayout({
                   </Link>
                 </Button>
                 <Button variant={"ghost"} className="rounded-full p-2">
-                  <Link href="">
+                  <Link href="https://wa.me/13998051611" target="_blank">
                     <FaWhatsapp size={24} />
                   </Link>
                 </Button>
