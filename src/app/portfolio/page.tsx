@@ -18,6 +18,7 @@ import imagem_2 from "@/../public/imagem-2.jpg";
 import imagem_3 from "@/../public/imagem-3.jpg";
 import imagem_5 from "@/../public/imagem-5.jpg";
 import imagem_4 from "@/../public/imagem-4.jpg";
+import Link from "next/link";
 
 export default function Portfolio() {
   const router = useRouter();
@@ -48,9 +49,14 @@ export default function Portfolio() {
         </div>
 
         <Container className="relative flex justify-center items-center h-full">
-          <p className="portfolio2 absolute top-8 xl:top-16 left-0 text-stone-100 font-custom font-thin italic text-4xl">
-            Confiança em cada tratamento
-          </p>
+          <div className="portfolio2 flex justify-between w-full flex-wrap gap-2 absolute top-8 xl:top-16 left-0 text-stone-100 font-custom font-thin italic text-4xl">
+            <p>Confiança em cada tratamento</p>
+            <Button asChild className="gap-1">
+              <Link href="https://wa.me/13998051611" target="_blank">
+                AGENDAR UMA CONSULTA <ArrowRight size={16} />
+              </Link>
+            </Button>
+          </div>
 
           {/* <Card className="portfolio3 h-[675px] w-[550px] z-10 border-none">
             <Image

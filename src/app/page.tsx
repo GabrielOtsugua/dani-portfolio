@@ -17,6 +17,7 @@ import {
 import Image from "next/image";
 import imagem_1 from "@/../public/imagem-1.jpg";
 import imagem_2 from "@/../public/imagem-2.jpg";
+import Link from "next/link";
 
 export default function Home() {
   const router = useRouter();
@@ -52,17 +53,23 @@ export default function Home() {
               Cuidando da sua pele, cuidando de você
             </em>
             <p className="flex items-center gap-2 mt-8">
-              Conheça os tratamentos
+              Fale com um profissional
             </p>
 
-            <Drawer>
+            <Button asChild className="gap-1">
+              <Link href="https://wa.me/13998051611" target="_blank">
+                AGENDAR UMA CONSULTA <ArrowRight size={16} />
+              </Link>
+            </Button>
+
+            {/* <Drawer>
               <DrawerTrigger asChild>
                 <Button className="gap-1">
                   TRATAMENTOS <ArrowRight size={16} />
                 </Button>
               </DrawerTrigger>
               <Menu />
-            </Drawer>
+            </Drawer> */}
           </span>
         </Container>
       </div>

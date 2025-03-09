@@ -4,7 +4,7 @@ import { slideDown } from "@/animations/animations";
 import Container from "@/components/Container";
 import { Button } from "@/components/ui/button";
 import { useGSAP } from "@gsap/react";
-import { InstagramIcon } from "lucide-react";
+import { ArrowRight, InstagramIcon } from "lucide-react";
 import Link from "next/link";
 
 export default function Contato() {
@@ -29,10 +29,16 @@ export default function Contato() {
         <p className="text-lg">Contato</p>
         <p className="mb-4">(13) 99805-1611</p>
 
-        <p className="text-sm">
+        <p className="text-sm mb-4">
           Clínica Dra. Danielle Moraes, atendimento de segunda a sábado das
           09:00 ás 19:00
         </p>
+
+        <Button asChild className="gap-1">
+          <Link href="https://wa.me/13998051611" target="_blank">
+            AGENDAR UMA CONSULTA <ArrowRight size={16} />
+          </Link>
+        </Button>
       </Container>
 
       <Container className="contato2 relative mb-32">

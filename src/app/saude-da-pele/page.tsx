@@ -19,6 +19,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import imagem_6 from "@/../public/imagem-6.jpg";
 import imagem_7 from "@/../public/imagem-7.jpg";
+import Link from "next/link";
 
 export default function SaudeDaPele() {
   const route = useRouter();
@@ -54,9 +55,14 @@ export default function SaudeDaPele() {
         </div>
 
         <Container className="relative flex justify-center items-center h-full">
-          <p className="saude2 absolute top-8 xl:top-16 left-0 text-stone-100 font-custom font-thin italic text-4xl">
-            Pele saudável, vida saudável
-          </p>
+          <div className="saude2 flex justify-between w-full flex-wrap gap-2 absolute top-8 xl:top-16 left-0 text-stone-100 font-custom font-thin italic text-4xl">
+            <p>Pele saudável, vida saudável</p>
+            <Button asChild className="gap-1">
+              <Link href="https://wa.me/13998051611" target="_blank">
+                AGENDAR UMA CONSULTA <ArrowRight size={16} />
+              </Link>
+            </Button>
+          </div>
 
           {/* <Card className="saude3 flex justify-center items-center h-96 w-96 z-10 border bg-transparent">
             <p className="text-stone-100">Imagem profissional</p>

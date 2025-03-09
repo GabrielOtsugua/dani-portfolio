@@ -42,7 +42,7 @@ export default function Tratamentos({ params }: MenuParams) {
 
         <Button asChild className="tratamentos2 gap-1">
           <Link href="https://wa.me/13998051611" target="_blank">
-            ENCONTRE O TRATAMENTO IDEAL <ArrowRight size={16} />
+            AGENDAR UMA CONSULTA <ArrowRight size={16} />
           </Link>
         </Button>
 
