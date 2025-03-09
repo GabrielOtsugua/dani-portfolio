@@ -3,6 +3,45 @@ import { v4 as uuid } from "uuid";
 export const menu = [
   {
     id: uuid(),
+    href: "consulta-dermatologica",
+    nome_tratamento: "Consulta dermatológica",
+    descricao_tratamento:
+      "A consulta dermatológica com a Dra. Danielle é um atendimento humanizado que vai além da simples análise da pele. Envolve acolhimento, escuta ativa e um olhar atento às necessidades individuais de cada paciente. O objetivo é não apenas diagnosticar e tratar doenças de pele, cabelos e unhas, mas também proporcionar conforto e segurança durante todo o processo. Veja como funciona uma consulta dermatológica humanizada e completa:",
+    tipos: [
+      {
+        id: uuid(),
+        nome: "Acolhimento e diálogo",
+        descricao:
+          "O primeiro passo é estabelecer uma relação de confiança. A Dra. Danielle faz perguntas sobre a queixa principal, histórico de saúde, hábitos diários e possíveis fatores emocionais que possam influenciar a condição da pele. A escuta ativa e a empatia são essenciais para que o paciente se sinta compreendido e respeitado.",
+      },
+      {
+        id: uuid(),
+        nome: "Exame clínico detalhado",
+        descricao:
+          "Após a conversa inicial, é realizada uma avaliação completa da pele, cabelos e unhas. Mesmo que o paciente tenha uma queixa específica, o exame abrange outras áreas do corpo para identificar sinais precoces de possíveis alterações dermatológicas.",
+      },
+      {
+        id: uuid(),
+        nome: "Dermatoscopia",
+        descricao:
+          "Esse exame complementar é fundamental para uma análise mais aprofundada das lesões cutâneas. A dermatoscopia é um método não invasivo que utiliza um aparelho chamado dermatoscópio para ampliar estruturas da pele que não são visíveis a olho nu. Ele é especialmente útil para: Avaliação de pintas e sinais (nevos), auxiliando na detecção precoce do câncer de pele, como o melanoma. Diagnóstico de doenças inflamatórias da pele. Investigação de doenças do couro cabeludo, como a alopecia.",
+      },
+      {
+        id: uuid(),
+        nome: "Plano de tratamento",
+        descricao:
+          "Após a avaliação, os achados são explicados de forma clara e acessível, esclarecendo dúvidas e apresentando as opções de tratamento. A abordagem é sempre individualizada, considerando as necessidades e preferências do paciente.",
+      },
+      {
+        id: uuid(),
+        nome: "Orientações preventivas",
+        descricao:
+          "Além do tratamento específico, a consulta inclui recomendações sobre cuidados diários com a pele, uso adequado de protetor solar, alimentação e outros hábitos saudáveis. A prevenção é uma parte essencial da dermatologia humanizada.",
+      },
+    ],
+  },
+  {
+    id: uuid(),
     href: "tratamentos-faciais",
     nome_tratamento: "Tratamentos faciais",
     descricao_tratamento:

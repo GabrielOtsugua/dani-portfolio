@@ -80,15 +80,32 @@ export default function Portfolio() {
       <Container className="space-y-32 py-32">
         <div className="portfolio4 flex flex-col items-center gap-4 md:w-full lg:w-[700px] m-auto">
           <p>
-            Formada no Rio de Janeiro, Danielle possui ampla experiência
-            profissional e um vasto conhecimento médico. Sua dedicação e
-            competência resultam em tratamentos eficazes, refletidos na
-            satisfação de seus muitos pacientes.
+            Médica, pós-graduada em Dermatologia Clínica e Estética. A Dra.
+            Danielle Moraes de Aguiar é graduada pela Faculdade de Medicina do
+            Grande Rio (UNIGRANRIO) e possui pós-graduação em Dermatologia
+            Clínica pelo Instituto Pele Saudável BWS, um serviço de referência
+            em Dermatologia no bairro da Bela Vista, na cidade de São Paulo.
           </p>
           <p>
-            O seu objetivo é claro e essencial: melhorar a saúde e a beleza da
-            sua pele com expertise dermatológica.
+            Após concluir os estudos em Dermatologia Clínica, realizou sua
+            segunda pós-graduação em Dermatologia Estética, aprofundando seus
+            conhecimentos em procedimentos estéticos faciais e corporais.
           </p>
+          <p>
+            Devido à sua formação completa, a Dra. Danielle é referência em
+            procedimentos estéticos como preenchimento e toxina botulínica,
+            sempre buscando bom senso, elegância e naturalidade nos resultados.
+            Também se destaca na tricologia (estudo dos cabelos), tratando
+            inúmeros pacientes com queixas de queda capilar e alterações na
+            haste capilar. Além disso, trata doenças de pele e unhas.
+          </p>
+          <p>
+            Sua dedicação e competência resultam em tratamentos eficazes,
+            refletidos na satisfação de seus muitos pacientes. Seu objetivo é
+            claro e essencial: melhorar a saúde e a beleza da pele, dos cabelos
+            e das unhas, com expertise dermatológica.
+          </p>
+          <p>CRM-SP 234151</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">

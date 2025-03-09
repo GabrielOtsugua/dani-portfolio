@@ -45,7 +45,7 @@ export default function Home() {
           </em>
 
           <p className="home2 absolute top-8 text-2xl font-light font-custom italic text-main2/60 text-stone-500">
-            Dra. Dani Moraes
+            Dra. Danielle Moraes
           </p>
 
           <span className="home3 w-full md:w-[500px] flex flex-col items-start gap-4 z-10">
