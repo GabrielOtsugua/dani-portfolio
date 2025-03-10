@@ -34,7 +34,7 @@ export default function WppClickToChat() {
 
   return (
     <div
-      className={`fixed bottom-4 right-4 flex flex-col items-end gap-2 transition duration-500 ${
+      className={`fixed bottom-4 right-4 z-10 flex flex-col items-end gap-2 transition duration-500 ${
         show ? "transform translate-y-0" : "transform translate-y-24"
       }`}
     >

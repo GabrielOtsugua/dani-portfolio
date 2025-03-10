@@ -38,18 +38,18 @@ export default function Portfolio() {
 
   return (
     <div>
-      <div className="h-screen bg-stone-800 text-stone-100">
+      <div className="h-screen bg-primary900 text-stone-100">
         <div
           id="background"
           className="absolute h-full w-full flex justify-center z-0 items-center"
         >
-          <p className="portfolio1 text-stone-500 text-[35px] md:text-[70px] xl:text-[130px] 2xl:text-[150px] font-custom italic font-extralight">
+          <p className="portfolio1 text-[35px] md:text-[70px] xl:text-[130px] 2xl:text-[150px] font-custom italic font-extralight">
             Dra. Danielle Moraes
           </p>
         </div>
 
         <Container className="relative flex justify-center items-center h-full">
-          <div className="portfolio2 flex justify-between w-full flex-wrap gap-2 absolute top-8 xl:top-16 left-0 text-stone-100 font-custom font-thin italic text-4xl">
+          <div className="portfolio2 flex justify-between w-full flex-wrap gap-2 absolute top-8 xl:top-16 left-0 font-custom font-thin italic text-4xl">
             <p>Confiança em cada tratamento</p>
             <Button asChild className="gap-1">
               <Link href="https://wa.me/13998051611" target="_blank">
@@ -71,7 +71,7 @@ export default function Portfolio() {
             <MoveDown
               size={96}
               strokeWidth={0.5}
-              className="-translate-x-11 text-stone-500"
+              className="-translate-x-11 text-primary"
             />
           </span>
         </Container>

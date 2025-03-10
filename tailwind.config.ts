@@ -25,8 +25,9 @@ const config = {
         "3xl": "1600px",
       },
       colors: {
-        main: "#422006",
-        main2: "#a16207",
+        primary700: "#a16207",
+        primary800: "#854d0e",
+        primary900: "#713f12",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

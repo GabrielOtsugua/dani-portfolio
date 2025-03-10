@@ -14,14 +14,14 @@ export default function FinalPresentation() {
   });
 
   return (
-    <div className="bg-stone-800 text-stone-100">
+    <div className="bg-primary800 text-stone-100">
       <Container className="min-h-screen grid md:grid-cols-2 gap-8 items-center py-16">
         <main className="finalPresentation1 space-y-8">
           <p className="font-custom font-thin italic text-6xl md:w-full lg:w-[350px]">
             Cuidando da sua pele, cuidando de você
           </p>
 
-          <Button variant={"default"} className="gap-1 bg-stone-500">
+          <Button variant={"default"} className="gap-1">
             AGENDAR UMA CONSULTA <ArrowRight size={16} />
           </Button>
         </main>

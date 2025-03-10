@@ -3,6 +3,7 @@
 import { slideDown } from "@/animations/animations";
 import Container from "@/components/Container";
 import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import { useGSAP } from "@gsap/react";
 import { ArrowRight, InstagramIcon } from "lucide-react";
 import Link from "next/link";
@@ -15,23 +16,28 @@ export default function Contato() {
 
   return (
     <div>
-      <Container className="contato1 py-32">
-        <p className="text-2xl text-stone-500 font-custom italic mb-4">
-          Entre em contato
+      <Container className="contato1 py-24">
+        <p className="text-2xl font-custom italic mb-4">Entre em contato</p>
+
+        <p className="text-lg">Nossos endereços</p>
+        <p>- Centro Médico Canto do Forte:</p>
+        <p className="text-sm mb-4">
+          Rua Rui Barbosa, 836, Canto do Forte, Praia Grande SP, 11700-170
         </p>
 
-        <p className="text-lg">Endereço</p>
-        <p className="mb-4">
-          Rua Luis Antônio de Andrade Vieira, 216, Boqueirão – Praia Grande SP
-          (sala 512)
+        <p>- Instituto Cangussu:</p>
+        <p className="text-sm mb-4">
+          Rua Major Rebello,266, Canto do Morro, Iguape SP
         </p>
+
+        <Separator className="mb-4" />
 
         <p className="text-lg">Contato</p>
         <p className="mb-4">(13) 99805-1611</p>
 
         <p className="text-sm mb-4">
-          Clínica Dra. Danielle Moraes, atendimento de segunda a sábado das
-          09:00 ás 19:00
+          Clínica Dra. Danielle Moraes, atendimento de segunda a sexta das 09:00
+          ás 19:00
         </p>
 
         <Button asChild className="gap-1">
@@ -42,7 +48,7 @@ export default function Contato() {
       </Container>
 
       <Container className="contato2 relative mb-32">
-        <p className="text-[40px] md:text-[80px] lg:text-[100px] xl:text-[110px] 2xl:text-[110px] 3xl:text-[140px] text-stone-200/60 font-custom italic">
+        <p className="text-[40px] md:text-[80px] lg:text-[100px] xl:text-[110px] 2xl:text-[110px] 3xl:text-[140px] text-primary/20 font-custom italic">
           @dradanimoraess
         </p>
 

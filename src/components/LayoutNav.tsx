@@ -49,7 +49,7 @@ export default function LayoutNav() {
         <span className="flex items-center space-x-4">
           <Drawer>
             <DrawerTrigger className="flex items-center text-xs gap-1 hover:scale-90 duration-200">
-              <AlignRight size={20} /> MENU
+              <AlignRight size={20} className="text-primary" /> MENU
             </DrawerTrigger>
             <Menu />
           </Drawer>

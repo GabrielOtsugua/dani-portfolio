@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Drawer, DrawerTrigger } from "@/components/ui/drawer";
 import { useGSAP } from "@gsap/react";
-import { ArrowDown, ArrowRight, MoveDown } from "lucide-react";
+import { AlignRight, ArrowDown, ArrowRight, MoveDown } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import imagem_6 from "@/../public/imagem-6.jpg";
@@ -44,18 +44,18 @@ export default function SaudeDaPele() {
 
   return (
     <div>
-      <div className="relative h-screen bg-stone-800 text-stone-100">
+      <div className="relative h-screen bg-primary900 text-stone-100">
         <div
           id="background"
           className="absolute h-full w-full flex justify-center z-0 items-center"
         >
-          <p className="saude1 text-stone-500 text-[44px] md:text-[80px] xl:text-[150px] 2xl:text-[180px] font-custom italic font-extralight">
+          <p className="saude1 text-[44px] md:text-[80px] xl:text-[150px] 2xl:text-[180px] font-custom italic font-extralight">
             Cuidando da pele
           </p>
         </div>
 
         <Container className="relative flex justify-center items-center h-full">
-          <div className="saude2 flex justify-between w-full flex-wrap gap-2 absolute top-8 xl:top-16 left-0 text-stone-100 font-custom font-thin italic text-4xl">
+          <div className="saude2 flex justify-between w-full flex-wrap gap-2 absolute top-8 xl:top-16 left-0 font-custom font-thin italic text-4xl">
             <p>Pele saudável, vida saudável</p>
             <Button asChild className="gap-1">
               <Link href="https://wa.me/13998051611" target="_blank">
@@ -73,7 +73,7 @@ export default function SaudeDaPele() {
             <MoveDown
               size={96}
               strokeWidth={0.5}
-              className="-translate-x-11 text-stone-500"
+              className="-translate-x-11 text-primary"
             />
           </span>
         </Container>
@@ -120,19 +120,19 @@ export default function SaudeDaPele() {
 
           <ul className="grid md:grid-cols-4 gap-4 text-center">
             <li className="cascadeScroll h-40 rounded flex flex-col justify-start items-center gap-2 p-4">
-              <ArrowDown className="text-stone-500" /> Melhoria na aparência e
+              <ArrowDown className="text-primary" /> Melhoria na aparência e
               autoestima
             </li>
             <li className="cascadeScroll h-40 rounded flex flex-col justify-start items-center gap-2 p-4">
-              <ArrowDown className="text-stone-500" /> Prevenção do
-              envelhecimento precoce
+              <ArrowDown className="text-primary" /> Prevenção do envelhecimento
+              precoce
             </li>
             <li className="cascadeScroll h-40 rounded flex flex-col justify-start items-center gap-2 p-4">
-              <ArrowDown className="text-stone-500" /> Proteção contra danos
+              <ArrowDown className="text-primary" /> Proteção contra danos
               ambientais
             </li>
             <li className="cascadeScroll h-40 rounded flex flex-col justify-start items-center gap-2 p-4">
-              <ArrowDown className="text-stone-500" /> Prevenção de doenças
+              <ArrowDown className="text-primary" /> Prevenção de doenças
             </li>
           </ul>
         </div>
@@ -148,7 +148,7 @@ export default function SaudeDaPele() {
           <Drawer>
             <DrawerTrigger asChild>
               <Button className="gap-1">
-                TRATAMENTOS <ArrowRight size={16} />
+                <AlignRight size={16} /> MENU
               </Button>
             </DrawerTrigger>
             <Menu />

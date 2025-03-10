@@ -39,12 +39,12 @@ export default function Home() {
         <Container className="grid z-10">
           <em
             id="dermatologista"
-            className="home1 absolute top-[20%] left-0 z-0 font-custom font-thin text-[450px] text-stone-500/5 select-none"
+            className="home1 absolute top-[20%] left-0 z-0 font-custom font-thin text-[450px] text-primary/10 select-none"
           >
             Dermatologista
           </em>
 
-          <p className="home2 absolute top-8 text-2xl font-light font-custom italic text-main2/60 text-stone-500">
+          <p className="home2 absolute top-8 text-2xl font-light font-custom italic">
             Dra. Danielle Moraes
           </p>
 
@@ -80,7 +80,7 @@ export default function Home() {
           com expertise dermatológica.
         </p>
 
-        <MoveDown className="w-full my-8 text-stone-500" />
+        <MoveDown className="w-full my-8 text-primary" />
       </div>
 
       <div>

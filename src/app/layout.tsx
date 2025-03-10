@@ -48,9 +48,9 @@ export default function RootLayout({
 
         <FinalPresentation />
 
-        <footer className="bg-stone-800 text-background">
+        <footer className="bg-primary900 text-background">
           <Container className="grid grid-cols-2 md:grid-cols-4 gap-8 py-8">
-            <div className="flex flex-col items-start font-custom font-light text-3xl italic text-stone-500">
+            <div className="flex flex-col items-start font-custom font-light text-3xl italic text-background">
               <p>Dra.</p>
               <p>Danielle</p>
               <p>Moraes</p>

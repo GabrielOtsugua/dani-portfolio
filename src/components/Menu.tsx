@@ -8,15 +8,15 @@ import { menu } from "@/data/data";
 
 export default function Menu() {
   return (
-    <DrawerContent className="pb-16 bg-stone-600/60 text-stone-100 backdrop-blur-sm border-none">
-      <Container className="space-y-8">
-        <p className="flex items-center text-3xl font-custom italic font-light">
+    <DrawerContent className="pb-8 bg-primary700/60 text-stone-100 backdrop-blur-sm border-none">
+      <Container className="space-y-4 pt-4">
+        {/* <p className="flex items-center text-3xl font-custom italic font-light">
           Tratamentos
-        </p>
+        </p> */}
 
-        <main className="grid md:grid-cols-2 gap-4 text-2xl font-custom font-light italic pb-8">
+        <main className="grid md:grid-cols-2 gap-3 text-2xl font-custom font-light italic pb-8">
           <DrawerClose asChild>
-            <Link href="/" className="hover:text-stone-400 w-fit">
+            <Link href="/" className="hover:text-primary w-fit">
               Home
             </Link>
           </DrawerClose>
@@ -25,7 +25,7 @@ export default function Menu() {
             <DrawerClose asChild key={item.id}>
               <Link
                 href={`/tratamentos/${item.href}`}
-                className="hover:text-stone-400 w-fit"
+                className="hover:text-primary w-fit"
               >
                 {item.nome_tratamento}
               </Link>
@@ -33,19 +33,19 @@ export default function Menu() {
           ))}
 
           <DrawerClose asChild>
-            <Link href="/portfolio" className="hover:text-stone-400 w-fit">
+            <Link href="/portfolio" className="hover:text-primary w-fit">
               Dra. Danielle Moraes
             </Link>
           </DrawerClose>
           <DrawerClose asChild>
-            <Link href="/contato" className="hover:text-stone-400 w-fit">
+            <Link href="/contato" className="hover:text-primary w-fit">
               Contato
             </Link>
           </DrawerClose>
         </main>
 
         <footer className="grid grid-cols-2 gap-4">
-          <div>
+          {/* <div>
             <div>
               <p className="text-lg">Endereço</p>
               <p>
@@ -53,7 +53,7 @@ export default function Menu() {
                 Grande SP (sala 512)
               </p>
             </div>
-          </div>
+          </div> */}
 
           <div>
             <p className="text-lg">Acompanhe</p>
