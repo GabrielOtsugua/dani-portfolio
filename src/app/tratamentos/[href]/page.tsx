@@ -9,8 +9,13 @@ import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 import { menu } from "@/data/data";
 import { useGSAP } from "@gsap/react";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import imagem_6 from "@/../public/imagem-6.jpg";
+import imagem_7 from "@/../public/imagem-7.jpg";
+import imagem_9 from "@/../public/imagem-9.jpg";
+import { useEffect, useState } from "react";
 
 interface MenuParams {
   params: { href: string };
@@ -27,6 +32,12 @@ export default function Tratamentos({ params }: MenuParams) {
   const tratamento_encontrado = menu.find((item) => item.href == params.href);
 
   const router = useRouter();
+  const [specificPage, setSpecificPage] = useState(false);
+  const pathName = usePathname();
+
+  useEffect(() => {
+    pathName === "/tratamentos/consulta-dermatologica" && setSpecificPage(true);
+  });
 
   return (
     <div>
@@ -58,6 +69,34 @@ export default function Tratamentos({ params }: MenuParams) {
               <TreatmentsDialogData descricao={item.descricao} />
             </Dialog>
           ))}
+        </div>
+
+        <div
+          data-especificPage={specificPage}
+          className="hidden data-[especificPage=true]:grid md:grid-cols-2 justify-items-center items-center gap-y-8 md:gap-y-28 gap-x-8 py-20"
+        >
+          <Image
+            src={imagem_9}
+            alt={""}
+            className="h-[600px] w-96 object-cover rounded"
+          />
+          <p className="leading-7">
+            A relação que temos com nossa pele vai muito além da estética.
+            Sentir-se bem com a própria aparência influencia diretamente nossa
+            autoestima, confiança e bem-estar emocional. Quando aceitamos e
+            cuidamos da nossa pele com carinho, aprendemos a valorizar nossa
+            individualidade e a respeitar nosso corpo.
+          </p>
+          <Image
+            src={imagem_6}
+            alt={""}
+            className="h-[600px] w-96 object-cover rounded"
+          />
+          <Image
+            src={imagem_7}
+            alt={""}
+            className="h-[600px] w-96 object-cover rounded"
+          />
         </div>
       </Container>
     </div>

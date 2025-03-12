@@ -49,22 +49,17 @@ export default function RootLayout({
         <FinalPresentation />
 
         <footer className="bg-primary900 text-background">
-          <Container className="grid grid-cols-2 md:grid-cols-4 gap-8 py-8">
+          <Container className="grid grid-cols-2 md:grid-cols-3 justify-items-center gap-8 py-8">
             <div className="flex flex-col items-start font-custom font-light text-3xl italic text-background">
               <p>Dra.</p>
               <p>Danielle</p>
               <p>Moraes</p>
             </div>
-            <div className="">
-              <p className="text-lg">Endereço</p>
-              <p>
-                Rua Luis Antônio de Andrade Vieira, 216, Boqueirão – Praia
-                Grande SP (sala 512)
-              </p>
-            </div>
-            <div className="">
-              <p className="text-lg">Contato</p>
-              <p>WhatsApp: (13) 99805-1611</p>
+            <div>
+              <p className="text-lg">Endereços e contato</p>
+              <Button variant={"link"}>
+                <Link href="/contato">Saiba mais.</Link>
+              </Button>
             </div>
             <div className="">
               <p className="text-lg">Acompanhe</p>
