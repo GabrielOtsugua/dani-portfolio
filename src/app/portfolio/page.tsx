@@ -58,14 +58,6 @@ export default function Portfolio() {
             </Button>
           </div>
 
-          {/* <Card className="portfolio3 h-[675px] w-[550px] z-10 border-none">
-            <Image
-              src={imagem_4}
-              alt=""
-              className="w-full h-full object-cover rounded"
-            />
-          </Card> */}
-
           <span className="absolute -bottom-12 left-0">
             <p>Sobre mim</p>
             <MoveDown

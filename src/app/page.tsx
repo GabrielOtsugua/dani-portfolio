@@ -1,10 +1,8 @@
 "use client";
 
 import Container from "@/components/Container";
-import Menu from "@/components/Menu";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Drawer, DrawerTrigger } from "@/components/ui/drawer";
 import { ArrowRight, MoveDown } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useGSAP } from "@gsap/react";
@@ -61,15 +59,6 @@ export default function Home() {
                 AGENDAR UMA CONSULTA <ArrowRight size={16} />
               </Link>
             </Button>
-
-            {/* <Drawer>
-              <DrawerTrigger asChild>
-                <Button className="gap-1">
-                  TRATAMENTOS <ArrowRight size={16} />
-                </Button>
-              </DrawerTrigger>
-              <Menu />
-            </Drawer> */}
           </span>
         </Container>
       </div>

@@ -3,9 +3,9 @@
 import { ArrowRight } from "lucide-react";
 import Container from "./Container";
 import { Button } from "./ui/button";
-import { Card } from "./ui/card";
 import { useGSAP } from "@gsap/react";
 import { slideLeft, slideRight } from "@/animations/animations";
+import Link from "next/link";
 
 export default function FinalPresentation() {
   useGSAP(() => {
@@ -21,19 +21,12 @@ export default function FinalPresentation() {
             Cuidando da sua pele, cuidando de você
           </p>
 
-          <Button variant={"default"} className="gap-1">
-            AGENDAR UMA CONSULTA <ArrowRight size={16} />
+          <Button variant={"default"} asChild className="gap-1">
+            <Link href="https://wa.me/13998051611" target="_blank">
+              AGENDAR UMA CONSULTA <ArrowRight size={16} />
+            </Link>
           </Button>
         </main>
-        {/* <div className="finalPresentation2 hidden md:block">
-          <Card className="h-[600px] border-none bg-transparent">
-            <Image
-              src={imagem_1_recortado}
-              alt=""
-              className="h-full rounded object-contain bg-transparent"
-            />
-          </Card>
-        </div> */}
       </Container>
     </div>
   );

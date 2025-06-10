@@ -10,10 +10,6 @@ export default function Menu() {
   return (
     <DrawerContent className="pb-8 bg-primary700/60 text-stone-100 backdrop-blur-sm border-none">
       <Container className="space-y-4 pt-4">
-        {/* <p className="flex items-center text-3xl font-custom italic font-light">
-          Tratamentos
-        </p> */}
-
         <main className="grid md:grid-cols-2 gap-3 text-2xl font-custom font-light italic pb-8">
           <DrawerClose asChild>
             <Link href="/" className="hover:text-primary w-fit">
@@ -45,16 +41,6 @@ export default function Menu() {
         </main>
 
         <footer className="grid grid-cols-2 gap-4">
-          {/* <div>
-            <div>
-              <p className="text-lg">Endereço</p>
-              <p>
-                Rua Luis Antônio de Andrade Vieira, 216, Boqueirão – Praia
-                Grande SP (sala 512)
-              </p>
-            </div>
-          </div> */}
-
           <div>
             <p className="text-lg">Acompanhe</p>
             <span className="flex gap-2">

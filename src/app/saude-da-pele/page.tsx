@@ -64,10 +64,6 @@ export default function SaudeDaPele() {
             </Button>
           </div>
 
-          {/* <Card className="saude3 flex justify-center items-center h-96 w-96 z-10 border bg-transparent">
-            <p className="text-stone-100">Imagem profissional</p>
-          </Card> */}
-
           <span className="absolute -bottom-12 left-0">
             <p>Saiba mais</p>
             <MoveDown
