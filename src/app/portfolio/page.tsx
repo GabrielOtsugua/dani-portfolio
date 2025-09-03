@@ -52,7 +52,10 @@ export default function Portfolio() {
           <div className="portfolio2 flex justify-between w-full flex-wrap gap-2 absolute top-8 xl:top-16 left-0 font-custom font-thin italic text-4xl">
             <p>Confiança em cada tratamento</p>
             <Button asChild className="gap-1">
-              <Link href="https://wa.me/13998051611" target="_blank">
+              <Link
+                href="https://wa.me/5513998051611?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Dra%20Danielle%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20consulta"
+                target="_blank"
+              >
                 AGENDAR UMA CONSULTA <ArrowRight size={16} />
               </Link>
             </Button>

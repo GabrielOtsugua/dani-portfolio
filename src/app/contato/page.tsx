@@ -41,7 +41,10 @@ export default function Contato() {
         </p>
 
         <Button asChild className="gap-1">
-          <Link href="https://wa.me/13998051611" target="_blank">
+          <Link
+            href="https://wa.me/5513998051611?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Dra%20Danielle%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20consulta"
+            target="_blank"
+          >
             AGENDAR UMA CONSULTA <ArrowRight size={16} />
           </Link>
         </Button>
