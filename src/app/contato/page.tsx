@@ -22,7 +22,8 @@ export default function Contato() {
         <p className="text-lg">Nossos endereços</p>
         <p>- Centro Médico Canto do Forte:</p>
         <p className="text-sm mb-4">
-          Rua Rui Barbosa, 836, Canto do Forte, Praia Grande SP, 11700-170
+          R. Luiz Antonio de Andrade Vieira, 216 - Sala 810 - Boqueirão, Praia
+          Grande - SP, 11701-040
         </p>
 
         <p>- Instituto Cangussu:</p>
