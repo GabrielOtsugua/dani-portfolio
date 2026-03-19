@@ -20,7 +20,7 @@ export default function Contato() {
         <p className="text-2xl font-custom italic mb-4">Entre em contato</p>
 
         <p className="text-lg">Nossos endereços</p>
-        <p>- Centro Médico Canto do Forte:</p>
+        <p>- Kimbor Office:</p>
         <p className="text-sm mb-4">
           R. Luiz Antonio de Andrade Vieira, 216 - Sala 810 - Boqueirão, Praia
           Grande - SP, 11701-040
